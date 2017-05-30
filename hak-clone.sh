@@ -7,7 +7,7 @@ set -e
 
 GIT_PATH=$1
 PROJECT_DIR=$2
-git clone git@github.com:${GIT_PATH} ${PROJECT_DIR}
+git clone http://github.com/${GIT_PATH} ${PROJECT_DIR}
 cd ${PROJECT_DIR}
 
 if [[ -f docker-compose.yml ]]; then
