@@ -4,6 +4,8 @@ A Node.js script to work with docker repositories.
 # Installation
 
    ```sh
+   $ git clone http://github.com/divyekapoor/hak.git
+   $ cd hak
    $ ./install.sh
    ```
 
