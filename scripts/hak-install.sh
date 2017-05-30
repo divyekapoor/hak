@@ -10,7 +10,12 @@ if [[ -n "$(type docker)" ]]; then
 fi
 
 if [[ "$(hak-env)" == "Linux" ]]; then
-  sudo apt-get install -y docker docker-machine docker-compose
+  sudo apt-get install -y docker docker-compose
+  # Install Docker Machine:
+  # Instructions: https://docs.docker.com/machine/install-machine/
+  curl -L https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
+  chmod +x /tmp/docker-machine
+  sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
   RUBY_VERSION=$(ruby -v | awk '{ print $2 }')
   if [[ "${RUBY_VERSION}" < "2.1.0p000" ]]; then
     echo "Ruby Version ${RUBY_VERSION} is lower than expected for dory. Please update Ruby."
