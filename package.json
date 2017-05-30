@@ -23,15 +23,15 @@
     "url": "https://github.com/divyekapoor/hak/issues"
   },
   "bin": {
-    "hak": "./hak.sh",
-    "hak-on": "./hak-on.sh",
-    "hak-off": "./hak-off.sh",
-    "hak-up": "./hak-up.sh",
-    "hak-install": "./hak-install.sh",
-    "hak-uninstall": "./hak-uninstall.sh",
-    "hak-env": "./hak-env.sh",
-    "hak-clone": "./hak-clone.sh",
-    "hak-test": "./hak-test.sh"
+    "hak": "./scripts/hak.sh",
+    "hak-on": "./scripts/hak-on.sh",
+    "hak-off": "./scripts/hak-off.sh",
+    "hak-up": "./scripts/hak-up.sh",
+    "hak-install": "./scripts/hak-install.sh",
+    "hak-uninstall": "./scripts/hak-uninstall.sh",
+    "hak-env": "./scripts/hak-env.sh",
+    "hak-clone": "./scripts/hak-clone.sh",
+    "hak-test": "./scripts/hak-test.sh"
   },
   "homepage": "https://github.com/divyekapoor/hak#readme"
 }
