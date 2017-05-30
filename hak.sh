@@ -13,11 +13,12 @@ function usage() {
   echo "hak clone     - Clone a github project (eg. honeybadger) and update the VIRTUAL_ENV variable in docker-compose.yml"
   echo "hak up        - Issue docker-compose up -d"
   echo "hak uninstall - Uninstall hak from the machine"
+  echo "hak test      - Test the operation of hak on your machine"
   echo
   exit
 }
 
-COMMANDS="install on off clone up uninstall -h --help"
+COMMANDS="install on off clone up uninstall test -h --help"
 
 if [[ $COMMANDS =~ (^|[[:space:]])$1($|[[:space:]]) ]]; then
   CMD=$1
