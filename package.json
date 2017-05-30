@@ -22,5 +22,15 @@
   "bugs": {
     "url": "https://github.com/divyekapoor/hak/issues"
   },
+  "bin": {
+    "hak": "./hak.sh",
+    "hak-on": "./hak-on.sh",
+    "hak-off": "./hak-off.sh",
+    "hak-up": "./hak-up.sh",
+    "hak-install": "./hak-install.sh",
+    "hak-uninstall": "./hak-uninstall.sh",
+    "hak-env": "./hak-env.sh",
+    "hak-clone": "./hak-clone.sh"
+  }
   "homepage": "https://github.com/divyekapoor/hak#readme"
 }
