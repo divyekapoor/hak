@@ -1,6 +1,6 @@
 {
   "name": "hak",
-  "version": "1.0.0",
+  "version": "0.0.1",
   "description": "CLI for quickly spinning up docker projects.",
   "main": "index.js",
   "scripts": {
