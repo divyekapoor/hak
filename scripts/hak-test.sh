@@ -6,6 +6,8 @@
 set -e
 set -x
 
+CWD=$(pwd)
+
 rm -rf test-project
 hak install || echo "Skipping install step."
 hak off
@@ -14,4 +16,5 @@ hak clone jaequery/honeybadger test-project
 cd test-project
 hak up
 
+cd ${CWD}
 rm -rf test-project
