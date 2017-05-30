@@ -6,6 +6,7 @@
 set -e
 set -x
 
+rm -rf test-project
 hak install || echo "Skipping install step."
 hak off
 hak on
