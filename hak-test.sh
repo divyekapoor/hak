@@ -5,10 +5,9 @@
 
 set -e
 
-if [[ "$(hak-env)" == "Linux" ]]; then
-  sudo service docker start
-  SYSTEMD_PAGER='' sudo -E service docker status
-else
-  echo Unimplemented: hak on on Mac.
-fi
-
+hak install || echo "Skipping install step."
+hak off
+hak on
+hak clone jaequery/honeybadger test-project
+cd test-project
+hak up

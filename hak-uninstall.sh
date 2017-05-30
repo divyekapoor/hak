@@ -2,4 +2,4 @@
 #
 
 set -e
-npm uninstall -g hak
+sudo npm uninstall -g hak
