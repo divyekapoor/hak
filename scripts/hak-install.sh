@@ -13,7 +13,8 @@ if [[ "$(hak-env)" == "Linux" ]]; then
   sudo apt-get install -y docker docker-compose
   # Install Docker Machine:
   # Instructions: https://docs.docker.com/machine/install-machine/
-  curl -L https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
+  DOCKER_MACHINE_VERSION=v0.10.0
+  curl -L https://github.com/docker/machine/releases/download/${DOCKER_MACHINE_VERSION}/docker-machine-`uname -s`-`uname -m` >/tmp/docker-machine
   chmod +x /tmp/docker-machine
   sudo cp /tmp/docker-machine /usr/local/bin/docker-machine
   RUBY_VERSION=$(ruby -v | awk '{ print $2 }')
