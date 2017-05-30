@@ -15,6 +15,7 @@ hak on
 hak clone jaequery/honeybadger test-project
 cd test-project
 hak up
+hak off
 
 cd ${CWD}
 rm -rf test-project
