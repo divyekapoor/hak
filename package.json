@@ -31,6 +31,6 @@
     "hak-uninstall": "./hak-uninstall.sh",
     "hak-env": "./hak-env.sh",
     "hak-clone": "./hak-clone.sh"
-  }
+  },
   "homepage": "https://github.com/divyekapoor/hak#readme"
 }
