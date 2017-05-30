@@ -27,5 +27,7 @@ else
   brew install docker docker-machine
   brew tap codekitchen/dinghy
   brew install dinghy
+  curl -L https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine
+	chmod +x /usr/local/bin/docker-machine
 fi
 
