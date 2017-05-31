@@ -8,6 +8,6 @@ set -e
 if [[ "$(hak-env)" == "Linux" ]]; then
   sudo service docker start
 else
-  echo Unimplemented: hak on on Mac.
+  docker-machine create -d virtualbox default || docker-machine start default
 fi
 

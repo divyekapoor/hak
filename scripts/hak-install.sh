@@ -24,7 +24,7 @@ if [[ "$(hak-env)" == "Linux" ]]; then
   fi
   sudo gem install dory
 else
-  brew install docker docker-machine
+  brew install docker docker-machine docker-compose
   brew tap codekitchen/dinghy
   brew install dinghy
   curl -L https://github.com/docker/machine/releases/download/v0.10.0/docker-machine-`uname -s`-`uname -m` >/usr/local/bin/docker-machine

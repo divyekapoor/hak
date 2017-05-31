@@ -8,6 +8,7 @@ set -e
 if [[ "$(hak-env)" == "Linux" ]]; then
   sudo service docker stop
 else
-  echo Unimplemented: hak off on Mac.
+  docker-machine kill default || true
+  docker-machine rm default
 fi
 
